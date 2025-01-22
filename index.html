@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API IBGE Frequência de Nomes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>API IBGE Frequência de Nomes</h1>
+</header>
+<main>
+<form id="search-form">
+<label for="rota">Escolha a rota:</label>
+<select id="rota" name="rota" required>
+<option value="rota1"> Rota 1: Frequência do nome "JOAO"</option>
+<option value="rota2"> Rota 2: Frequência por localidade</option>
+<option value="rota3"> Rota 3: Frequência por nivel geográfico</option>
+<option value="rota4"> Rota 4: Informações sobre um país</option>
+</select>
+<div id="localidade-field" style="display: none;">
+<label for="localidade">Localidade (opcional):</label>
+<input type="text" id="localidade" name="localidade" placeholder="BR">
+</div>
+<div id="groupby-field" style="display: none;">
+<input type="text" id="groupBy" name="groupBy" placeholder="UF">
+</div>
+<div id="pais-field" style="display: none;">
+<label for="pais">País:</label>
+<input type="text" id="pais" name="pais" value="BR">
+</div>
+<button type="submit">Buscar</button>
+</form>
+<section id="result">
+<!-- Resultados serão exibidos aqui -->
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

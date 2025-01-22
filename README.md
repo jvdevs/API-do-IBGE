@@ -1,2 +1,4 @@
-# Aplicação de API
-Trabalho sobre Aplicação de API do IBGE, trazendo dados de cidades, estados e códigos locais
+
+# API IBGE Frequência de Nomes
+
+Este projeto consulta a API do IBGE para obter dados sobre a frequência de nomes no Brasil.
